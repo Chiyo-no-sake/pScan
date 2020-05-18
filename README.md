@@ -7,8 +7,8 @@ dependencies and leave it run until it ends without any interaction.
 All results will be than transferred to a remote server with SSH, the script now has done and can
 be removed from the host (see 'SSH Server Configuration').
 
-Dependencies:
-    The only few dependencies required for the script to work are:
+#Dependencies:
+     The only few dependencies required for the script to work are:
      - a python3 interpreter
      - pip module for python3 (usually distributed with python)
      - net-tools
@@ -20,7 +20,7 @@ Dependencies:
 
      Everything else needed by the script can be auto downloaded when launching it.
 
-Usage:
+#Usage:
     Script doesn't require installation.
     You can start the scan by moving into project directory and simply doing:
 
@@ -39,7 +39,7 @@ Usage:
 
     'pscan.py' is the one actually used by the bash script with predefined parameters.
 
-SSH Server Configuration:
+#SSH Server Configuration:
     For running the auto script, you have to configure a remote SSH server listening on port 22.
     The server must be configured to accept connection without password, only with a key-pair authentication.
     To accomplish this, you have to put the '.pub' file in project folder to the ssh configuration
@@ -47,7 +47,7 @@ SSH Server Configuration:
 
     If the server is not correctly the script will ask for password after the scan is completed.
 
-Output File:
+#Output File:
     The output file sent to the SSH server will use the following syntax:
 
         <active-host-1-ip> <active-host-1-mac>
@@ -67,7 +67,7 @@ Output File:
         filtered
         open|filtered (most of the cases a UDP scan can tell only this)
 
-Info:
+#Info:
     Script created by Luca Pasini for SUPSI under no particular license.
     Script uses 'scapy' python module (included in project), for more info:
 
