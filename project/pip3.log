@@ -1,0 +1,11 @@
+Processing ./dependencies/scapy-2.4.3.tar.gz
+Building wheels for collected packages: scapy
+  Building wheel for scapy (setup.py): started
+  Building wheel for scapy (setup.py): finished with status 'done'
+  Created wheel for scapy: filename=scapy-2.4.3-py2.py3-none-any.whl size=1043873 sha256=5b0573bc7abc5da6cc6afa89b784db3d96080d93d35ff8dd32f1d3490d2da889
+  Stored in directory: /root/.cache/pip/wheels/fa/51/ba/e14a4e0639341228d211ebd78f3c572dc2122551c5247852a9
+Successfully built scapy
+Installing collected packages: scapy
+Successfully installed scapy-2.4.3
+WARNING: You are using pip version 20.0.2; however, version 20.1 is available.
+You should consider upgrading via the '/usr/bin/python3 -m pip install --upgrade pip' command.
