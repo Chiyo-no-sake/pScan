@@ -1,3 +1,4 @@
+# pScan - simple fast port scanner
 A simple bash+python script that helps scanning a net to get information about ports ad hosts in a FAST way,
 so it avoid asking fro user input and tries to scan most common ports, over the whole network where the host that runs
 the script is connected.
@@ -7,7 +8,7 @@ dependencies and leave it run until it ends without any interaction.
 All results will be than transferred to a remote server with SSH, the script now has done and can
 be removed from the host (see 'SSH Server Configuration').
 
-# Dependencies:
+## Dependencies:
 The only few dependencies required for the script to work are:
 - a python3 interpreter
 - pip module for python3 (usually distributed with python)
@@ -20,7 +21,7 @@ terminal:
 
 Everything else needed by the script can be auto downloaded when launching it.
 
-# Usage:
+## Usage:
 Script doesn't require installation.
 You can start the scan by moving into project directory and simply doing:
 
@@ -39,7 +40,7 @@ pre-configured bash executable. For scan, it uses 'portScanner.py'.
 
 'pscan.py' is the one actually used by the bash script with predefined parameters.
 
-# SSH Server Configuration:
+## SSH Server Configuration:
 For running the auto script, you have to configure a remote SSH server listening on port 22.
 The server must be configured to accept connection without password, only with a key-pair authentication.
 To accomplish this, you have to put the '.pub' file in project folder to the ssh configuration
@@ -47,7 +48,7 @@ dir (~/.ssh) on the remote server.
 
 If the server is not correctly the script will ask for password after the scan is completed.
 
-# Output File:
+## Output File:
 The output file sent to the SSH server will use the following syntax:
 
         <active-host-1-ip> <active-host-1-mac>
@@ -63,11 +64,11 @@ The output file sent to the SSH server will use the following syntax:
 - Ports closed are not even listed in the output.
 - TCP ports that are listed are open, else they are not listed.
 - UDP ports will have all their own status, one from:
-    ⋅⋅* open (unlikely and really rare)
-    ⋅⋅* filtered
-    ⋅⋅* open|filtered (most of the cases a UDP scan can tell only this)
+    * open (unlikely and really rare)
+    * filtered
+    * open|filtered (most of the cases a UDP scan can tell only this)
 
-# Info:
+## Info:
 Script created by Luca Pasini for SUPSI under no particular license.
 Script uses 'scapy' python module (included in project), for more info:
 	https://scapy.net/
