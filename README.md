@@ -70,5 +70,4 @@ The output file sent to the SSH server will use the following syntax:
 
 ## Info:
 Script created by Luca Pasini for SUPSI under no particular license.
-Script uses 'scapy' python module (included in project), for more info:
-	https://scapy.net/
+Script uses 'scapy' python module (included in project), for more info: https://scapy.net/
